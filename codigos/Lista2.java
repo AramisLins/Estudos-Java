@@ -60,6 +60,33 @@ public class Lista2 {
             System.out.println(numero + "! = " + fatorial);
         }
 	}
+	public static void q4(){
+	Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Quantidade de números: ");
+        int cont = scanner.nextInt();
+
+        int menor = Integer.MAX_VALUE;
+        int maior = Integer.MIN_VALUE;
+        int soma = 0;
+
+        System.out.println("Insira os números:");
+        for (int i = 0; i < cont; i++) {
+            int num = scanner.nextInt();
+            if (num < menor) {
+                menor = num;
+            }
+            if (num > maior) {
+                maior = num;
+            }
+            soma += num;
+        }
+        System.out.println("Menor valor: " + menor);
+        System.out.println("Maior valor: " + maior);
+        System.out.println("Soma dos valores: " + soma);
+
+        scanner.close();
+	}
 }
 
     
